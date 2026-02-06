@@ -1,12 +1,31 @@
 "use client";
 
+import React from "react";
+import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import Navigation from "@/components/navigation";
 import NeuralBackground from "@/components/ui/flow-field-background";
 import { ArrowRight, Zap, Target, Rocket } from "lucide-react";
 
 export default function Home() {
-  // Projects and education section removed for simplicity
+  // Scroll state for showing RouteInfo
+  const [showRoutes, setShowRoutes] = React.useState(false);
+  const RouteInfo = dynamic(() => import("@/components/RouteInfo"), { ssr: false });
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      // Show RouteInfo when scrolled more than 50px vertically
+      if (window.scrollY > 50) {
+        setShowRoutes(true);
+        console.log("RouteInfo overlay shown (scrollY > 50)");
+      } else {
+        setShowRoutes(false);
+        console.log("RouteInfo overlay hidden (scrollY <= 50)");
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <main className="relative min-h-screen bg-black overflow-hidden">
@@ -79,6 +98,13 @@ export default function Home() {
       </section>
 
       {/* Projects and education section removed for simplicity */}
+
+      {/* RouteInfo overlay */}
+      {showRoutes && (
+        <div style={{ zIndex: 1001 }}>
+          <RouteInfo />
+        </div>
+      )}
 
       {/* Scanline effect */}
       <div className="fixed inset-0 pointer-events-none z-50 opacity-[0.015]">

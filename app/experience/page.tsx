@@ -34,7 +34,7 @@ export default function Experience() {
         <div className="w-full bg-zinc-900 rounded-lg p-10 shadow-lg">
           <h2 className="text-2xl font-bold text-blue-400 mb-2">Web Developer Intern</h2>
           <p className="text-zinc-400 mb-1">SkillCraft Technology</p>
-          <p className="text-zinc-500 mb-4">Dec 2025 – Feb 2025</p>
+          <p className="text-zinc-400 mb-4">Dec 2025 – Feb 2025</p>
           <ul className="list-disc list-inside space-y-2 text-zinc-300">
             <li>Developed and maintained web applications using React and Node.js, improving user experience by 25%</li>
             <li>Collaborated with cross-functional teams to design and implement RESTful APIs serving 10,000+ daily users</li>

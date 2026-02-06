@@ -38,7 +38,7 @@ export default function PolaroidCard({
       }}
       whileTap={{ scale: 0.98 }}
       style={{
-        rotate: randomRotation,
+        transform: `rotate(${randomRotation}deg)`,
       }}
     >
       {/* Image */}

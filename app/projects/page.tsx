@@ -28,7 +28,7 @@ const SectionHeader = ({ title, subtitle }: { title: string; subtitle: string })
       <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
       {title}
     </h2>
-    <span className="text-xs text-zinc-600 font-mono hidden md:block">{subtitle}</span>
+    <span className="text-xs text-zinc-400 font-mono hidden md:block">{subtitle}</span>
   </div>
 );
 
@@ -48,7 +48,7 @@ export default function CampusPage() {
         </motion.h1>
         <div className="space-y-12">
           <div className="bg-zinc-900 rounded-xl p-12 shadow-2xl min-h-65.5 flex flex-col justify-between relative">
-            <h2 className="text-2xl font-bold text-blue-400 mb-2">QuickCart: E-commerce Platform <span className="text-sm text-zinc-400">| React js, Javascript, Tailwind CSS</span></h2>
+            <h2 className="text-2xl font-bold text-blue-500 mb-2">QuickCart: E-commerce Platform <span className="text-sm text-zinc-400">| React js, Javascript, Tailwind CSS</span></h2>
                         <ul className="list-disc list-inside text-zinc-300 mt-0 mb-0">
                           <li>Developed Frontend e-commerce platform with user authentication, product catalog, and shopping cart</li>
                           <li>Implemented responsive design ensuring compatibility across mobile and desktop devices</li>
@@ -64,7 +64,7 @@ export default function CampusPage() {
             {/* Removed duplicate points list for compactness */}
           </div>
           <div className="bg-zinc-900 rounded-xl p-12 shadow-2xl min-h-65.5 flex flex-col justify-between relative">
-            <h2 className="text-2xl font-bold text-blue-400 mb-2">Project Management Tool <span className="text-sm text-zinc-400">| MERN Stack</span></h2>
+            <h2 className="text-2xl font-bold text-blue-500 mb-2">Project Management Tool <span className="text-sm text-zinc-400">| MERN Stack</span></h2>
                         <ul className="list-disc list-inside text-zinc-300 mt-0 mb-0">
                           <li>Built a full-stack project management tool using the MERN stack (MongoDB, Express.js, React, Node.js) to streamline task tracking and team collaboration.</li>
                           <li>Implemented RESTful APIs for real-time data synchronization and user authentication.</li>
@@ -81,7 +81,7 @@ export default function CampusPage() {
             {/* Removed duplicate points list for compactness */}
           </div>
           <div className="bg-zinc-900 rounded-xl p-12 shadow-2xl min-h-65.5 flex flex-col justify-between relative">
-            <h2 className="text-2xl font-bold text-blue-400 mb-2">Community Issue Reporter <span className="text-sm text-zinc-400">| TypeScript, React, Node.js, MongoDB</span></h2>
+            <h2 className="text-2xl font-bold text-blue-500 mb-2">Community Issue Reporter <span className="text-sm text-zinc-400">| TypeScript, React, Node.js, MongoDB</span></h2>
                         <ul className="list-disc list-inside text-zinc-300 mt-0 mb-0">
                           <li>Built full-stack MERN application for community issue reporting with TypeScript, React, Node.js, and MongoDB, deployed on Vercel.</li>
                           <li>Designed responsive React interface enabling citizens to submit, track, and manage community issues with real-time updates.</li>

@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 export default function Navigation() {
   const pathname = usePathname();
   const isHome = pathname === "/";
-  // The Arena (Events), Projects, and Contact are also dark-themed pages
+  
   const isDarkTheme = pathname === "/" || pathname === "/events" || pathname === "/projects" || pathname === "/contact";
 
   return (
@@ -49,6 +49,20 @@ export default function Navigation() {
               HOME
             </motion.div>
           </Link>
+          <Link href="/skills">
+            <motion.div
+              className={cn(
+                "text-sm font-medium tracking-wide transition-colors",
+                pathname === "/skills"
+                  ? "text-blue-400"
+                  : "text-zinc-400 hover:text-zinc-200"
+              )}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              SKILLS
+            </motion.div>
+          </Link>
           <Link href="/education">
             <motion.div
               className={cn(
@@ -83,7 +97,7 @@ export default function Navigation() {
                 "text-sm font-medium tracking-wide transition-colors",
                 pathname === "/projects"
                   ? "text-blue-400"
-                  : (isDarkTheme ? "text-zinc-400 hover:text-zinc-200" : "text-zinc-400 hover:text-zinc-800")
+                  : "text-zinc-400 hover:text-zinc-200"
               )}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -97,7 +111,7 @@ export default function Navigation() {
                 "text-sm font-medium tracking-wide transition-colors",
                 pathname === "/contact"
                   ? "text-blue-400"
-                  : (isDarkTheme ? "text-zinc-400 hover:text-zinc-200" : "text-zinc-400 hover:text-zinc-800")
+                  : "text-zinc-400 hover:text-zinc-200"
               )}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
