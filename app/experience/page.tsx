@@ -9,7 +9,7 @@ export default function Experience() {
     <main className="relative min-h-screen bg-black overflow-hidden">
       {/* Neural Background */}
       <NeuralBackground
-        color="#3b82f6"
+        color="#fff"
         particleCount={800}
         trailOpacity={0.12}
         speed={0.8}

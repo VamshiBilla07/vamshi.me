@@ -119,7 +119,7 @@ export default function EventsPage() {
       {/* Background */}
       <div className="fixed inset-0 z-0">
          <NeuralBackground 
-           color="#A3A3A3" 
+           color="#fff" 
            speed={0.8} 
            particleCount={500} 
            trailOpacity={0.2}
