@@ -129,21 +129,22 @@ export default function NeuralBackground({
       init();
     };
 
-    const handleMouseMove = (e: MouseEvent) => {
-      const rect = canvas.getBoundingClientRect();
-      mouse.x = e.clientX - rect.left;
-      mouse.y = e.clientY - rect.top;
-    };
+    // Disable mouse interaction: keep particles fixed, no hover effect
+    // const handleMouseMove = (e: MouseEvent) => {
+    //   const rect = canvas.getBoundingClientRect();
+    //   mouse.x = e.clientX - rect.left;
+    //   mouse.y = e.clientY - rect.top;
+    // };
 
     init();
     animate();
 
     window.addEventListener("resize", handleResize);
-    container.addEventListener("mousemove", handleMouseMove);
+    // container.addEventListener("mousemove", handleMouseMove);
 
     return () => {
       window.removeEventListener("resize", handleResize);
-      container.removeEventListener("mousemove", handleMouseMove);
+      // container.removeEventListener("mousemove", handleMouseMove);
       cancelAnimationFrame(animationFrameId);
     };
   }, [color, trailOpacity, particleCount, speed]);

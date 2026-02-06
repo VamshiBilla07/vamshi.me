@@ -10,7 +10,7 @@ export default function SkillsPage() {
       {/* Neural Background */}
       <NeuralBackground
         color="#fff"
-        particleCount={800}
+        particleCount={700}
         trailOpacity={0.12}
         speed={0.8}
       />

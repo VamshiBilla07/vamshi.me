@@ -35,7 +35,7 @@ const SectionHeader = ({ title, subtitle }: { title: string; subtitle: string })
 export default function CampusPage() {
   return (
     <div className="relative min-h-screen w-full bg-[#0A0A0A] text-white overflow-x-hidden pt-24 pb-20">
-      <NeuralBackground color="#fff" particleCount={800} trailOpacity={0.12} speed={0.8} />
+      <NeuralBackground color="#fff" particleCount={700} trailOpacity={0.12} speed={0.8} />
       <Navigation />
       <main className="relative z-10 max-w-3xl mx-auto px-6 py-16">
         <motion.h1

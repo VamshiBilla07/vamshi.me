@@ -29,7 +29,7 @@ export default function Navigation() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            VAMSHI PORTFOLIO
+            Portfolio
           </motion.div>
         </Link>
 

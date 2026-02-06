@@ -37,7 +37,7 @@ export default function AboutPage() {
 
   return (
     <main className="relative min-h-screen bg-black overflow-hidden">
-      <NeuralBackground color="#fff" particleCount={800} trailOpacity={0.12} speed={0.8} />
+      <NeuralBackground color="#fff" particleCount={700} trailOpacity={0.12} speed={0.8} />
 
       {/* Navigation */}
       <Navigation />
