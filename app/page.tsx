@@ -80,7 +80,10 @@ export default function Home() {
           </motion.p>
 
           {/* CTA */}
-          <motion.button
+          <motion.a
+            href="https://docs.google.com/document/d/1bI_R7QOuprXSEAHQOBEu0N9JMJNCSGLP/edit?usp=sharing&ouid=107726572104961922713&rtpof=true&sd=true"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 bg-blue-600/10 backdrop-blur-sm border border-blue-500/30 px-8 py-4 rounded-sm text-blue-400 font-medium tracking-wide hover:bg-blue-600/20 transition-all"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -88,9 +91,9 @@ export default function Home() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
-            <span>ENTER THE SYSTEM</span>
+            <span>Resume</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </motion.button>
+          </motion.a>
         </motion.div>
       </section>
 
