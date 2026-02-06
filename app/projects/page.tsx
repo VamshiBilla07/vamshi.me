@@ -39,7 +39,7 @@ export default function CampusPage() {
       <Navigation />
       <main className="relative z-10 max-w-3xl mx-auto px-6 py-16">
         <motion.h1
-          className="text-5xl md:text-7xl font-display font-bold text-zinc-100 mb-12 text-center"
+          className="text-5xl md:text-7xl font-display font-bold bg-gradient-to-r from-zinc-200 via-zinc-400 to-zinc-600 bg-clip-text text-transparent mb-12 text-center"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -62,7 +62,7 @@ export default function CampusPage() {
               <span className="text-sm">Demo</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
-            {/* Removed duplicate points list for compactness */}
+            
           </div>
           <div className="bg-zinc-900 rounded-xl p-12 shadow-2xl min-h-65.5 flex flex-col justify-between relative">
             <h2 className="text-2xl font-bold text-blue-500 mb-2">Project Management Tool <span className="text-sm text-zinc-400">| MERN Stack</span></h2>
@@ -79,7 +79,7 @@ export default function CampusPage() {
               <span className="text-sm">Demo</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
-            {/* Removed duplicate points list for compactness */}
+            
           </div>
           <div className="bg-zinc-900 rounded-xl p-12 shadow-2xl min-h-65.5 flex flex-col justify-between relative">
             <h2 className="text-2xl font-bold text-blue-500 mb-2">Community Issue Reporter <span className="text-sm text-zinc-400">| TypeScript, React, Node.js, MongoDB</span></h2>
@@ -95,7 +95,7 @@ export default function CampusPage() {
               <span className="text-sm">Demo</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
-            {/* Removed duplicate points list for compactness */}
+            
           </div>
         </div>
       </main>

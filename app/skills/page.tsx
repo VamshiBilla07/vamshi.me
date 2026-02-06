@@ -6,7 +6,7 @@ import NeuralBackground from "@/components/ui/flow-field-background";
 
 export default function SkillsPage() {
   return (
-    <main className="relative min-h-screen bg-black text-white flex flex-col items-center justify-center px-8 overflow-hidden">
+    <main className="relative min-h-screen bg-black mb-6 text-center flex flex-col items-center justify-center px-8 overflow-hidden">
       {/* Neural Background */}
       <NeuralBackground
         color="#fff"
@@ -15,7 +15,8 @@ export default function SkillsPage() {
         speed={0.8}
       />
       <Navigation />
-      <h1 className="text-4xl font-bold mb-8 mt-24 z-10">Technologies & Tools</h1>
+      <h1 className="text-4xl font-bold mb-8 mt-24 z-10 bg-gradient-to-r from-zinc-200 via-zinc-400 to-zinc-600 bg-clip-text text-transparent">Technologies & Tools</h1>
+      <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-transparent mb-8 mx-auto sticky" />
       <div className="flex flex-row gap-70 justify-center items-start z-10">
         {/* Column 1 */}
         <div className="flex flex-col gap-6">
