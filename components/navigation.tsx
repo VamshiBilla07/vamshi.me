@@ -49,7 +49,7 @@ export default function Navigation() {
               HOME
             </motion.div>
           </Link>
-          <Link href="/events">
+          <Link href="/education">
             <motion.div
               className={cn(
                 "text-sm font-medium tracking-wide transition-colors",
