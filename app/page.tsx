@@ -56,7 +56,7 @@ export default function Home() {
             transition={{ duration: 1, delay: 0.3 }}
           >
             <h1 className="font-display text-2xl md:text-6xl font-black tracking-tighter text-transparent bg-clip-text bg-linear-to-b from-zinc-200 via-zinc-400 to-zinc-600">
-              Hey there, I'm Vamshi Billa.
+              Vamshi's Portfolio
             </h1>
             <div className="absolute inset-0 border-4 border-zinc-700/30 -skew-y-1" />
           </motion.div>
@@ -76,7 +76,7 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Building the Future.
+            Vamshi's Portfolio
           </motion.p>
 
           {/* CTA */}

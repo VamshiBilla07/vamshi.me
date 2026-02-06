@@ -18,7 +18,7 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "FOCUZDRVN — Building the Future",
+  title: "Vamshi's Portfolio",
   description: "High-Performance Industrial meets Gen Z Coziness",
 };
 
