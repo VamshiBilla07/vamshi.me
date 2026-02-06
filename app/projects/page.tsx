@@ -46,7 +46,7 @@ export default function CampusPage() {
           Projects
         </motion.h1>
         <div className="space-y-12">
-          <div className="bg-zinc-900 rounded-lg p-8 shadow-lg">
+          <div className="bg-zinc-900 rounded-xl p-12 shadow-2xl min-h-[350px] flex flex-col justify-center">
             <h2 className="text-2xl font-bold text-blue-400 mb-2">QuickCart: E-commerce Platform <span className="text-sm text-zinc-400">| React js, Javascript, Tailwind CSS</span></h2>
             <p className="text-blue-300 mb-2">Demo</p>
             <ul className="list-disc list-inside space-y-2 text-zinc-300">
@@ -54,7 +54,7 @@ export default function CampusPage() {
               <li>Implemented responsive design ensuring compatibility across mobile and desktop devices</li>
             </ul>
           </div>
-          <div className="bg-zinc-900 rounded-lg p-8 shadow-lg">
+          <div className="bg-zinc-900 rounded-xl p-12 shadow-2xl min-h-[350px] flex flex-col justify-center">
             <h2 className="text-2xl font-bold text-blue-400 mb-2">Project Management Tool <span className="text-sm text-zinc-400">| MERN Stack</span></h2>
             <p className="text-blue-300 mb-2">Demo</p>
             <ul className="list-disc list-inside space-y-2 text-zinc-300">
@@ -63,7 +63,7 @@ export default function CampusPage() {
               <li>Designed a responsive frontend interface with React components for efficient project workflow management</li>
             </ul>
           </div>
-          <div className="bg-zinc-900 rounded-lg p-8 shadow-lg">
+          <div className="bg-zinc-900 rounded-xl p-12 shadow-2xl min-h-[350px] flex flex-col justify-center">
             <h2 className="text-2xl font-bold text-blue-400 mb-2">Community Issue Reporter <span className="text-sm text-zinc-400">| TypeScript, React, Node.js, MongoDB</span></h2>
             <p className="text-blue-300 mb-2">Demo</p>
             <ul className="list-disc list-inside space-y-2 text-zinc-300">
