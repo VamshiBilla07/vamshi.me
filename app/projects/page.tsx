@@ -47,6 +47,7 @@ export default function CampusPage() {
           Projects
         </motion.h1>
         <div className="space-y-12">
+            <div className="w-32 h-1 bg-linear-to-r from-blue-500 to-transparent mb-8 mx-auto" />
           <div className="bg-zinc-900 rounded-xl p-12 shadow-2xl min-h-65.5 flex flex-col justify-between relative">
             <h2 className="text-2xl font-bold text-blue-500 mb-2">QuickCart: E-commerce Platform <span className="text-sm text-zinc-400">| React js, Javascript, Tailwind CSS</span></h2>
                         <ul className="list-disc list-inside text-zinc-300 mt-0 mb-0">
