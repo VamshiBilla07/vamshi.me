@@ -8,8 +8,8 @@ import { cn } from "@/lib/utils";
 export default function Navigation() {
   const pathname = usePathname();
   const isHome = pathname === "/";
-  // The Arena (Events) and The Base (Campus) are also dark-themed pages
-  const isDarkTheme = pathname === "/" || pathname === "/events" || pathname === "/campus";
+  // The Arena (Events), Projects, and Contact are also dark-themed pages
+  const isDarkTheme = pathname === "/" || pathname === "/events" || pathname === "/projects" || pathname === "/contact";
 
   return (
     <motion.nav
@@ -77,11 +77,11 @@ export default function Navigation() {
               EXPERIENCE
             </motion.div>
           </Link>
-          <Link href="/campus">
+          <Link href="/projects">
             <motion.div
               className={cn(
                 "text-sm font-medium tracking-wide transition-colors",
-                pathname === "/campus"
+                pathname === "/projects"
                   ? "text-blue-400"
                   : (isDarkTheme ? "text-zinc-400 hover:text-zinc-200" : "text-zinc-400 hover:text-zinc-800")
               )}
@@ -91,11 +91,11 @@ export default function Navigation() {
               PROJECTS
             </motion.div>
           </Link>
-          <Link href="/about">
+          <Link href="/contact">
             <motion.div
               className={cn(
                 "text-sm font-medium tracking-wide transition-colors",
-                pathname === "/about"
+                pathname === "/contact"
                   ? "text-orange-600"
                   : (isDarkTheme ? "text-zinc-400 hover:text-zinc-200" : "text-zinc-400 hover:text-zinc-800")
               )}
