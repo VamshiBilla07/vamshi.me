@@ -24,7 +24,7 @@ const GridBackground = () => (
 
 const SectionHeader = ({ title, subtitle }: { title: string; subtitle: string }) => (
   <div className="border-b border-zinc-800 pb-4 mb-8 flex items-end justify-between">
-    <h2 className="text-2xl font-mono text-zinc-100 uppercase tracking-widest flex items-center gap-2">
+    <h2 className="text-2xl font-mono text-zinc-100 hover:text-zinc-400 uppercase tracking-widest flex items-center gap-2">
       <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
       {title}
     </h2>

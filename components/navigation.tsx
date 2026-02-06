@@ -41,7 +41,7 @@ export default function Navigation() {
                 "text-sm font-medium tracking-wide transition-colors",
                 isHome
                   ? "text-blue-400"
-                  : (isDarkTheme ? "text-zinc-400 hover:text-zinc-200" : "text-zinc-400 hover:text-zinc-800")
+                  : "text-zinc-400 hover:text-zinc-200"
               )}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -69,7 +69,7 @@ export default function Navigation() {
                 "text-sm font-medium tracking-wide transition-colors",
                 pathname === "/education"
                   ? "text-blue-400"
-                  : (isDarkTheme ? "text-zinc-400 hover:text-zinc-200" : "text-zinc-400 hover:text-zinc-800")
+                  : "text-zinc-400 hover:text-zinc-200"
               )}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -83,7 +83,7 @@ export default function Navigation() {
                 "text-sm font-medium tracking-wide transition-colors",
                 pathname === "/experience"
                   ? "text-blue-400"
-                  : (isDarkTheme ? "text-zinc-400 hover:text-zinc-200" : "text-zinc-400 hover:text-zinc-800")
+                  : "text-zinc-400 hover:text-zinc-200"
               )}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
