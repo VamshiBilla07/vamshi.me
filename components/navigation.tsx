@@ -53,7 +53,7 @@ export default function Navigation() {
             <motion.div
               className={cn(
                 "text-sm font-medium tracking-wide transition-colors",
-                pathname === "/events"
+                pathname === "/education"
                   ? "text-blue-400"
                   : (isDarkTheme ? "text-zinc-400 hover:text-zinc-200" : "text-zinc-400 hover:text-zinc-800")
               )}
@@ -96,7 +96,7 @@ export default function Navigation() {
               className={cn(
                 "text-sm font-medium tracking-wide transition-colors",
                 pathname === "/contact"
-                  ? "text-orange-600"
+                  ? "text-blue-400"
                   : (isDarkTheme ? "text-zinc-400 hover:text-zinc-200" : "text-zinc-400 hover:text-zinc-800")
               )}
               whileHover={{ scale: 1.05 }}
