@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Navigation from "@/components/navigation";
+import NeuralBackground from "@/components/ui/flow-field-background";
 import PolaroidCard from "@/components/ui/polaroid-card";
 import { Heart, Users, Sparkles } from "lucide-react";
 
@@ -36,32 +37,7 @@ export default function AboutPage() {
 
   return (
     <main className="relative min-h-screen bg-black overflow-hidden">
-      {/* Warm Bokeh Background Effect */}
-      <div className="fixed inset-0 pointer-events-none">
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute rounded-full bg-orange-400/5 blur-3xl"
-            style={{
-              width: Math.random() * 300 + 100,
-              height: Math.random() * 300 + 100,
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              y: [0, Math.random() * 100 - 50],
-              x: [0, Math.random() * 100 - 50],
-              scale: [1, 1.2, 1],
-              opacity: [0.1, 0.3, 0.1],
-            }}
-            transition={{
-              duration: Math.random() * 10 + 10,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-          />
-        ))}
-      </div>
+      <NeuralBackground color="#fff" particleCount={800} trailOpacity={0.12} speed={0.8} />
 
       {/* Navigation */}
       <Navigation />
