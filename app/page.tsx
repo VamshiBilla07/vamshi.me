@@ -6,26 +6,7 @@ import NeuralBackground from "@/components/ui/flow-field-background";
 import { ArrowRight, Zap, Target, Rocket } from "lucide-react";
 
 export default function Home() {
-  const projects = [
-    {
-      title: "Project Alpha",
-      description: "Next-gen infrastructure",
-      icon: Zap,
-      span: "col-span-2 row-span-2",
-    },
-    {
-      title: "Project Beta",
-      description: "AI-driven solutions",
-      icon: Target,
-      span: "col-span-1 row-span-1",
-    },
-    {
-      title: "Project Gamma",
-      description: "Market disruption",
-      icon: Rocket,
-      span: "col-span-1 row-span-1",
-    },
-  ];
+  // Projects and education section removed for simplicity
 
   return (
     <main className="relative min-h-screen bg-black overflow-hidden">
@@ -97,70 +78,7 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Projects Grid Section */}
-      <section className="relative z-10 px-8 pb-32">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="mb-16"
-          >
-            <h2 className="font-display text-5xl font-bold text-zinc-300 mb-4">
-              EDUCATION
-            </h2>
-            <div className="h-1 w-32 bg-linear-to-r from-blue-500 to-transparent" />
-          </motion.div>
-
-          {/* Bento Grid */}
-          <div className="grid grid-cols-3 gap-6 auto-rows-[300px]">
-            {projects.map((project, index) => (
-              <motion.div
-                key={project.title}
-                className={`${project.span} group relative overflow-hidden rounded-sm border border-zinc-800/50 bg-zinc-950/40 backdrop-blur-md hover:border-blue-500/50 transition-all cursor-pointer`}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                whileHover={{ scale: 1.02 }}
-              >
-                {/* Glass effect overlay */}
-                <div className="absolute inset-0 bg-linear-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                
-                {/* Content */}
-                <div className="relative h-full p-8 flex flex-col justify-between">
-                  <div>
-                    <project.icon className="w-12 h-12 text-blue-400 mb-4" />
-                    <h3 className="font-display text-3xl font-bold text-zinc-200 mb-2">
-                      {project.title}
-                    </h3>
-                    <p className="text-zinc-500 tracking-wide">
-                      {project.description}
-                    </p>
-                  </div>
-
-                  <div className="flex items-center text-blue-400 text-sm font-medium">
-                    <span>VIEW PROJECT</span>
-                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" />
-                  </div>
-                </div>
-
-                {/* Grid pattern overlay */}
-                <div className="absolute inset-0 opacity-10 pointer-events-none">
-                  <div
-                    className="w-full h-full"
-                    style={{
-                      backgroundImage: `linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent)`,
-                      backgroundSize: "50px 50px",
-                    }}
-                  />
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Projects and education section removed for simplicity */}
 
       {/* Scanline effect */}
       <div className="fixed inset-0 pointer-events-none z-50 opacity-[0.015]">
