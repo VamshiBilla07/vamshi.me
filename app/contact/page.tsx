@@ -48,7 +48,7 @@ export default function ContactPage() {
           </div>
           <div className="mt-10">
             <a
-              href="/resume.pdf"
+              href="https://docs.google.com/document/d/1bI_R7QOuprXSEAHQOBEu0N9JMJNCSGLP/edit?usp=sharing&ouid=107726572104961922713&rtpof=true&sd=true"
               download
               className="border-blue-500/30 px-8 py-4 rounded-sm text-blue-400 font-medium tracking-wide hover:bg-blue-600/20 transition-all"
             >
