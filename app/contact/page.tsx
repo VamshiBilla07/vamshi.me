@@ -17,7 +17,7 @@ export default function ContactPage() {
 
       <section className="relative z-10 flex flex-col items-center justify-center min-h-screen px-8">
         <div className="max-w-2xl mx-auto text-center space-y-8">
-          <motion.h1 className="font-serif text-5xl md:text-6xl text-amber-50 mb-6" 
+          <motion.h1 className="text-4xl font-bold mb-8 mt-24 z-10 bg-gradient-to-r from-zinc-200 via-zinc-400 to-zinc-600 bg-clip-text text-transparent" 
            initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
