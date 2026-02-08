@@ -30,7 +30,7 @@ export default function ContactPage() {
               <Github size={32} />
             </a>
             <a
-              href="https://www.linkedin.com/in/vamshi-billa/"
+              href="https://www.linkedin.com/in/vamshi-billa-122794371/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-700 hover:bg-blue-600 text-white p-4 rounded-full transition-colors shadow-md flex items-center justify-center"
