@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
 import Navigation from "@/components/navigation";
 import NeuralBackground from "@/components/ui/flow-field-background";
 
@@ -15,7 +16,12 @@ export default function SkillsPage() {
         speed={0.8}
       />
       <Navigation />
-      <h1 className="text-4xl font-bold mb-8 mt-24 z-10 bg-gradient-to-r from-zinc-200 via-zinc-400 to-zinc-600 bg-clip-text text-transparent">Technologies & Tools</h1>
+      <motion.h1 className="text-4xl font-bold mb-8 mt-24 z-10 bg-gradient-to-r from-zinc-200 via-zinc-400 to-zinc-600 bg-clip-text text-transparent"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          >
+            Technologies & Tools</motion.h1>
       <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-transparent mb-8 mx-auto sticky" />
       <div className="flex flex-row gap-70 justify-center items-start z-10">
         {/* Column 1 */}

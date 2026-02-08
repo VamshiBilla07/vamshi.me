@@ -5,6 +5,7 @@ import NeuralBackground from "@/components/ui/flow-field-background";
 import { Github } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
+import { motion } from "framer-motion";
 
 export default function ContactPage() {
   return (
@@ -16,7 +17,11 @@ export default function ContactPage() {
 
       <section className="relative z-10 flex flex-col items-center justify-center min-h-screen px-8">
         <div className="max-w-2xl mx-auto text-center space-y-8">
-          <h1 className="font-serif text-5xl md:text-6xl text-amber-50 mb-6">Contact Me</h1>
+          <motion.h1 className="font-serif text-5xl md:text-6xl text-amber-50 mb-6" 
+           initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          >Contact Me</motion.h1>
             <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-transparent mb-8 mx-auto" />
           <p className="text-xl text-zinc-400 leading-relaxed">
             Feel free to explore my work and connect with me through my GitHub, LinkedIn, and Linktree profiles below!
