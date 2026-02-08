@@ -2,7 +2,9 @@
 
 import Navigation from "@/components/navigation";
 import NeuralBackground from "@/components/ui/flow-field-background";
-import { Github, Linkedin, Link } from "lucide-react";
+import { Github } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa";
+import { SiLinktree } from "react-icons/si";
 
 export default function ContactPage() {
   return (
@@ -23,25 +25,25 @@ export default function ContactPage() {
               href="https://github.com/VamshiBilla07"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-zinc-800 hover:bg-zinc-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors shadow-md flex items-center gap-2"
+              className="bg-zinc-800 hover:bg-zinc-700 text-white p-4 rounded-full transition-colors shadow-md flex items-center justify-center"
             >
-              <Github size={24} /> GitHub
+              <Github size={32} />
             </a>
             <a
               href="https://www.linkedin.com/in/vamshi-billa/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-700 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors shadow-md flex items-center gap-2"
+              className="bg-blue-700 hover:bg-blue-600 text-white p-4 rounded-full transition-colors shadow-md flex items-center justify-center"
             >
-              <Linkedin size={24} /> LinkedIn
+              <FaLinkedin size={32} />
             </a>
             <a
               href="https://linktr.ee/vamshi_billa"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-700 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors shadow-md flex items-center gap-2"
+              className="bg-green-700 hover:bg-green-600 text-white p-4 rounded-full transition-colors shadow-md flex items-center justify-center"
             >
-              <Link size={24} /> Linktree
+              <SiLinktree size={32} />
             </a>
           </div>
           <div className="mt-10">
