@@ -2,7 +2,7 @@
 
 import Navigation from "@/components/navigation";
 import NeuralBackground from "@/components/ui/flow-field-background";
-import { Github } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
 import { motion } from "framer-motion";
@@ -33,7 +33,7 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               className="bg-zinc-800 hover:bg-zinc-700 text-white p-4 rounded-full transition-colors shadow-md flex items-center justify-center"
             >
-              <Github size={30} />
+              <FaGithub size={30} />
             </a>
             <a
               href="https://www.linkedin.com/in/vamshi-billa-122794371/"
@@ -49,7 +49,7 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               className="bg-green-700 hover:bg-green-600 text-white p-4 rounded-full transition-colors shadow-md flex items-center justify-center"
             >
-              <SiLinktree size={32} />
+              <SiLinktree size={30} />
             </a>
           </div>
           <div className="mt-10">
