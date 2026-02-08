@@ -33,7 +33,7 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               className="bg-zinc-800 hover:bg-zinc-700 text-white p-4 rounded-full transition-colors shadow-md flex items-center justify-center"
             >
-              <Github size={32} />
+              <Github size={30} />
             </a>
             <a
               href="https://www.linkedin.com/in/vamshi-billa-122794371/"
