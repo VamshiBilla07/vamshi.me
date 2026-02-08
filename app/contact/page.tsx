@@ -1,40 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Navigation from "@/components/navigation";
 import NeuralBackground from "@/components/ui/flow-field-background";
-import PolaroidCard from "@/components/ui/polaroid-card";
-import { Heart, Users, Sparkles } from "lucide-react";
+import { Github, Linkedin, Link } from "lucide-react";
 
-export default function AboutPage() {
-  const team = [
-    {
-      name: "Raaj Patkar",
-      role: "Co-Founder",
-      image: "https://instagram.fbom3-5.fna.fbcdn.net/v/t51.2885-19/587533919_17929565742153747_4228546220121328475_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby41MzAuYzIifQ&_nc_ht=instagram.fbom3-5.fna.fbcdn.net&_nc_cat=103&_nc_oc=Q6cZ2QFTDwAe22IvZX9BUt68QZltzjBrVDh8kyE8Y4VAolCK6_WnbvfZ4N9IRngnA-Spi9AsAm_H7ZMQPoT8CRRhiKMZ&_nc_ohc=cOW1QV_AIzcQ7kNvwH4Ev2G&_nc_gid=8SmBrqn5kqCb-6xXSUK6cg&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_Aft3t47HLXIRqTTYSofiPHg2NU5o9vzS4dufVpnL7M0r4Q&oe=698627E6&_nc_sid=7a9f4b",
-    },
-    {
-      name: "Sam Rivera",
-      role: "Co-Founder",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
-    },
-    {
-      name: "Jordan Park",
-      role: "Lead Engineer",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
-    },
-    {
-      name: "Taylor Morgan",
-      role: "Design Lead",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
-    },
-  ];
-
-  const supporters = [
-    "KC College Of Engineering",
-    "Google Developers Group"
-  ];
-
+export default function ContactPage() {
   return (
     <main className="relative min-h-screen bg-black overflow-hidden">
       <NeuralBackground color="#fff" particleCount={700} trailOpacity={0.12} speed={0.8} />
@@ -42,97 +12,47 @@ export default function AboutPage() {
       {/* Navigation */}
       <Navigation />
 
-      {/* Hero Section */}
-      <section className="relative z-10 pt-32 pb-20 px-8">
-        <div className="max-w-6xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="space-y-6"
-          >
-            
-
-            <h1 className="font-serif text-6xl md:text-7xl text-amber-50 leading-tight">
-              Built & run by{" "}
-              <span className="italic text-orange-300">students</span>
-            </h1>
-
-            <p className="text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-              We're a team of builders, dreamers, and problem-solvers who believe
-              that the best products come from people who care deeply about the
-              impact they create.
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Values Section */}
-     
-
-      {/* Team Section */}
-      <section className="relative z-10 py-16 px-8">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            
-          </motion.div>
-
-          {/* Polaroid Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
-            {team.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-              >
-                <PolaroidCard
-                  name={member.name}
-                  role={member.role}
-                  image={member.image}
-                />
-              </motion.div>
-            ))}
+      <section className="relative z-10 flex flex-col items-center justify-center min-h-screen px-8">
+        <div className="max-w-2xl mx-auto text-center space-y-8">
+          <h1 className="font-serif text-5xl md:text-6xl text-amber-50 mb-6">Contact Me</h1>
+          <p className="text-xl text-zinc-400 leading-relaxed">
+            Feel free to explore my work and connect with me through my GitHub, LinkedIn, and Linktree profiles below!
+          </p>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 mt-8">
+            <a
+              href="https://github.com/VamshiBilla07"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-zinc-800 hover:bg-zinc-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors shadow-md flex items-center gap-2"
+            >
+              <Github size={24} /> GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/vamshi-billa/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-700 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors shadow-md flex items-center gap-2"
+            >
+              <Linkedin size={24} /> LinkedIn
+            </a>
+            <a
+              href="https://linktr.ee/vamshi_billa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-700 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors shadow-md flex items-center gap-2"
+            >
+              <Link size={24} /> Linktree
+            </a>
           </div>
-        </div>
-      </section>
-
-      {/* Supporters Section */}
-      <section className="relative z-10 py-20 px-8 border-t border-zinc-800/50">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
-            <p className="text-zinc-500 text-sm uppercase tracking-wider mb-8">
-              Backed & Supported By
-            </p>
-            <div className="flex flex-wrap items-center justify-center gap-12">
-              {supporters.map((supporter, index) => (
-                <motion.div
-                  key={supporter}
-                  className="text-zinc-600 font-display text-2xl font-bold tracking-wide hover:text-zinc-400 transition-colors cursor-pointer"
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  whileHover={{ scale: 1.1 }}
-                >
-                  {supporter}
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
+          <div className="mt-10">
+            <a
+              href="/resume.pdf"
+              download
+              className="bg-orange-500 hover:bg-orange-400 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg transition-colors"
+            >
+              Download Resume
+            </a>
+          </div>
         </div>
       </section>
 

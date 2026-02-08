@@ -35,7 +35,7 @@ export default function SkillsPage() {
         <div className="flex flex-col gap-6">
           <img src="https://skillicons.dev/icons?i=github" alt="GitHub" className="h-8" />
           <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" className="h-8" />
-          <img src="https://skillicons.dev/icons?i=vscode" alt="VSCode" className="h-8" />
+          <img src="https://skillicons.dev/icons?i=flutter" alt="Flutter" className="h-8" />
           <img src="https://skillicons.dev/icons?i=kubernetes" alt="Kubernetes" className="h-8" />
           <img src="https://skillicons.dev/icons?i=npm" alt="NPM" className="h-8" />
           <img src="https://skillicons.dev/icons?i=aws" alt="AWS" className="h-8" />
@@ -54,7 +54,7 @@ export default function SkillsPage() {
           <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" className="h-8" />
           <img src="https://skillicons.dev/icons?i=docker" alt="Docker" className="h-8" />
           <img src="https://skillicons.dev/icons?i=vercel" alt="Vercel" className="h-8" />
-          <img src="https://skillicons.dev/icons?i=sublime" alt="Sublime" className="h-8" />
+          <img src="https://skillicons.dev/icons?i=vue" alt="Vue.js" className="h-8" />
           <img src="https://skillicons.dev/icons?i=php" alt="PHP" className="h-8" />
         </div>
       </div>
