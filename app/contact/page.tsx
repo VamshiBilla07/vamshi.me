@@ -50,7 +50,7 @@ export default function ContactPage() {
             <a
               href="/resume.pdf"
               download
-              className="bg-orange-500 hover:bg-orange-400 text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg transition-colors"
+              className="border-blue-500/30 px-8 py-4 rounded-sm text-blue-400 font-medium tracking-wide hover:bg-blue-600/20 transition-all"
             >
               Download Resume
             </a>
