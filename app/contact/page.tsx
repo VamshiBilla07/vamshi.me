@@ -41,7 +41,7 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               className="bg-blue-700 hover:bg-blue-600 text-white p-4 rounded-full transition-colors shadow-md flex items-center justify-center"
             >
-              <FaLinkedin size={32} />
+              <FaLinkedin size={30} />
             </a>
             <a
               href="https://linktr.ee/vamshi_billa"
