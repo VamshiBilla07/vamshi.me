@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import NeuralBackground from "@/components/ui/flow-field-background";
+import NeuralNetworkBackground from "@/components/ui/neural-network-background";
 import Navigation from "@/components/navigation";
 import { motion } from "framer-motion";
 
@@ -49,12 +49,7 @@ export default function Education() {
   return (
     <main className="relative min-h-screen bg-black overflow-hidden">
       {/* Neural Background */}
-      <NeuralBackground
-        color="#fff"
-        particleCount={800}
-        trailOpacity={0.12}
-        speed={0.8}
-      />
+      <NeuralNetworkBackground nodeCount={32} connectionChance={0.13} />
 
       {/* Navigation */}
       <div className="z-10 w-full">

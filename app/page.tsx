@@ -4,7 +4,7 @@ import React from "react";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import Navigation from "@/components/navigation";
-import NeuralBackground from "@/components/ui/flow-field-background";
+import NeuralNetworkBackground from "@/components/ui/neural-network-background";
 import { ArrowRight, Zap, Target, Rocket } from "lucide-react";
 
 export default function Home() {
@@ -29,13 +29,8 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen bg-black overflow-hidden">
-      {/* Neural Background */}
-      <NeuralBackground
-        color="#3b82f6"
-        particleCount={800}
-        trailOpacity={0.12}
-        speed={0.8}
-      />
+      {/* Neural Network Background */}
+      <NeuralNetworkBackground nodeCount={32} connectionChance={0.13} />
 
       {/* Navigation */}
       <Navigation />

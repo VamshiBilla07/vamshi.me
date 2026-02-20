@@ -3,18 +3,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Navigation from "@/components/navigation";
-import NeuralBackground from "@/components/ui/flow-field-background";
+import NeuralNetworkBackground from "@/components/ui/neural-network-background";
 
 export default function SkillsPage() {
   return (
     <main className="relative min-h-screen bg-black mb-6 text-center flex flex-col items-center justify-center px-8 overflow-hidden">
       {/* Neural Background */}
-      <NeuralBackground
-        color="#fff"
-        particleCount={700}
-        trailOpacity={0.12}
-        speed={0.8}
-      />
+      <NeuralNetworkBackground nodeCount={32} connectionChance={0.13} />
       <Navigation />
       <motion.h1 className="text-4xl font-bold mb-8 mt-24 z-10 bg-gradient-to-r from-zinc-200 via-zinc-400 to-zinc-600 bg-clip-text text-transparent"
           initial={{ opacity: 0, y: 30 }}

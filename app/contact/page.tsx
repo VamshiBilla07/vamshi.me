@@ -1,7 +1,7 @@
 "use client";
 
 import Navigation from "@/components/navigation";
-import NeuralBackground from "@/components/ui/flow-field-background";
+import NeuralNetworkBackground from "@/components/ui/neural-network-background";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
@@ -10,19 +10,19 @@ import { motion } from "framer-motion";
 export default function ContactPage() {
   return (
     <main className="relative min-h-screen bg-black overflow-hidden">
-      <NeuralBackground color="#fff" particleCount={700} trailOpacity={0.12} speed={0.8} />
+      <NeuralNetworkBackground nodeCount={32} connectionChance={0.13} />
 
       {/* Navigation */}
       <Navigation />
 
       <section className="relative z-10 flex flex-col items-center justify-center min-h-screen px-8">
         <div className="max-w-2xl mx-auto text-center space-y-8">
-          <motion.h1 className="text-4xl font-bold mb-8 mt-24 z-10 bg-gradient-to-r from-zinc-200 via-zinc-400 to-zinc-600 bg-clip-text text-transparent" 
+          <motion.h1 className="text-4xl font-bold mb-8 mt-24 z-10 bg-linear-to-r from-zinc-200 via-zinc-400 to-zinc-600 bg-clip-text text-transparent" 
            initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           >Contact Me</motion.h1>
-            <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-transparent mb-8 mx-auto" />
+            <div className="w-32 h-1 bg-linear-to-r from-blue-500 to-transparent mb-8 mx-auto" />
           <p className="text-xl text-zinc-400 leading-relaxed">
             Feel free to explore my work and connect with me through my GitHub, LinkedIn, and Linktree profiles below!
           </p>

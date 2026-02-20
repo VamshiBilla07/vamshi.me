@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Navigation from "@/components/navigation";
-import NeuralBackground from "@/components/ui/flow-field-background";
+import NeuralNetworkBackground from "@/components/ui/neural-network-background";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
 
@@ -35,7 +35,7 @@ const SectionHeader = ({ title, subtitle }: { title: string; subtitle: string })
 export default function CampusPage() {
   return (
     <div className="relative min-h-screen w-full bg-[#0A0A0A] text-white overflow-x-hidden pt-24 pb-20">
-      <NeuralBackground color="#fff" particleCount={700} trailOpacity={0.12} speed={0.8} />
+      <NeuralNetworkBackground nodeCount={32} connectionChance={0.13} />
       <Navigation />
       <main className="relative z-10 max-w-3xl mx-auto px-6 py-16">
         <motion.h1

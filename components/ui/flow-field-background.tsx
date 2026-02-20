@@ -14,10 +14,10 @@ interface NeuralBackgroundProps {
 
 export default function NeuralBackground({
   className,
-  color = "#6366f1",
-  trailOpacity = 0.15,
-  particleCount = 600,
-  speed = 1,
+  color = "#fff", // white bands
+  trailOpacity = 0.12, // slightly lighter trails for minimal look
+  particleCount = 180, // fewer particles for minimal bands
+  speed = 0.5, // slower movement for subtle effect
 }: NeuralBackgroundProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -54,10 +54,11 @@ export default function NeuralBackground({
       }
 
       update() {
+        // Minimal neural bands: use a simple, slow, smooth field
         const angle =
-          (Math.cos(this.x * 0.005) + Math.sin(this.y * 0.005)) * Math.PI;
-        this.vx += Math.cos(angle) * 0.2 * speed;
-        this.vy += Math.sin(angle) * 0.2 * speed;
+          (Math.sin(this.x * 0.002) + Math.cos(this.y * 0.002)) * Math.PI * 0.5;
+        this.vx += Math.cos(angle) * 0.08 * speed;
+        this.vy += Math.sin(angle) * 0.08 * speed;
 
         const dx = mouse.x - this.x;
         const dy = mouse.y - this.y;
@@ -93,9 +94,10 @@ export default function NeuralBackground({
 
       draw(context: CanvasRenderingContext2D) {
         context.fillStyle = color;
-        const alpha = 1 - Math.abs(this.age / this.life - 0.5) * 2;
+        // Minimal: thinner, longer bands
+        const alpha = 0.7 - Math.abs(this.age / this.life - 0.5) * 0.7;
         context.globalAlpha = alpha;
-        context.fillRect(this.x, this.y, 1.5, 1.5);
+        context.fillRect(this.x, this.y, 0.8, 4.5);
       }
     }
 
@@ -112,6 +114,7 @@ export default function NeuralBackground({
     };
 
     const animate = () => {
+      // Black background
       ctx.fillStyle = `rgba(0, 0, 0, ${trailOpacity})`;
       ctx.fillRect(0, 0, width, height);
 
