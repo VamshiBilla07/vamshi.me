@@ -5,7 +5,7 @@ import NeuralBackground from "@/components/ui/flow-field-background";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
-import { motion } from "framer-motion";
+
 
 export default function ContactPage() {
   return (
