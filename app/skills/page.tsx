@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Navigation from "@/components/navigation";
-import NeuralNetworkBackground from "@/components/ui/neural-network-background";
+
 
 export default function SkillsPage() {
   return (
