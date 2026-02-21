@@ -42,7 +42,7 @@ export default function CampusPage() {
           className="text-5xl md:text-7xl font-display font-bold bg-gradient-to-r from-zinc-200 via-zinc-400 to-zinc-600 bg-clip-text text-transparent mb-12 text-center"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          
+          transition={{ duration: 0.8 }}
         >
           Projects
         </motion.h1>
