@@ -99,8 +99,7 @@ export default function NeuralNetworkBackground({
       animationId = requestAnimationFrame(animate);
     }
 
-    draw();
-    animate();
+    
 
     // Redraw and reset nodes on resize
     const handleResize = () => {
