@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 interface NeuralNetworkBackgroundProps {
   className?: string;
   nodeCount?: number;
-  connectionChance?: number;
+  
 }
 
 // Black and white neural network: nodes and connecting lines
