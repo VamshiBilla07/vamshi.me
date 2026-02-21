@@ -36,7 +36,13 @@ export default function NeuralBackground({
     let animationFrameId: number;
     let mouse = { x: -1000, y: -1000 };
 
-    
+    class Particle {
+      x: number;
+      y: number;
+      vx: number;
+      vy: number;
+      age: number;
+      life: number;
 
       constructor() {
         this.x = Math.random() * width;
