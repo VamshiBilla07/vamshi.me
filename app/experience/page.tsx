@@ -2,7 +2,7 @@
 "use client";
 import NeuralNetworkBackground from "@/components/ui/neural-network-background";
 import Navigation from "@/components/navigation";
-import { motion } from "framer-motion";
+
 
 export default function Experience() {
   return (
