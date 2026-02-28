@@ -83,13 +83,13 @@ export default function NeuralNetworkBackground({
 
       // Draw nodes (circles)
       ctx.save();
-      ctx.globalAlpha = 0.18; // even lower opacity for subtlety
+      ctx.globalAlpha = 0.38; // increase opacity for visibility
       ctx.fillStyle = "#fff";
       ctx.shadowColor = "transparent";
       ctx.shadowBlur = 0;
       for (const node of nodes) {
         ctx.beginPath();
-        ctx.arc(node.x, node.y, 1.2, 0, 2 * Math.PI); // much thinner point
+        ctx.arc(node.x, node.y, 2, 0, 2 * Math.PI); // slightly larger point
         ctx.fill();
       }
       ctx.restore();
