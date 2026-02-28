@@ -37,8 +37,9 @@ export default function NeuralNetworkBackground({
       nodes.push({
         x: Math.random() * width,
         y: Math.random() * height,
-        vx: (Math.random() - 0.5) * 0.25,
-        vy: (Math.random() - 0.5) * 0.25,
+        // Slower movement
+        vx: (Math.random() - 0.5) * 0.08,
+        vy: (Math.random() - 0.5) * 0.08,
       });
     }
 
@@ -53,19 +54,24 @@ export default function NeuralNetworkBackground({
     function draw() {
       if (!ctx) return;
       ctx.clearRect(0, 0, width, height);
+      // Restore original black background, but keep low opacity for subtlety
+      ctx.globalAlpha = 0.18;
       ctx.fillStyle = "#000";
       ctx.fillRect(0, 0, width, height);
+      ctx.globalAlpha = 1;
 
       // Draw connections (lines)
-      ctx.strokeStyle = "rgba(255,255,255,0.32)"; // more visible lines
+      ctx.save();
+      ctx.globalAlpha = 0.22; // lower opacity for lines
+      ctx.strokeStyle = "#fff"; // white lines for neutral look
       ctx.lineWidth = 1.7;
       for (let i = 0; i < nodes.length; i++) {
         for (let j = i + 1; j < nodes.length; j++) {
           const dx = nodes[i].x - nodes[j].x;
           const dy = nodes[i].y - nodes[j].y;
           const dist = Math.sqrt(dx * dx + dy * dy);
-          if (dist < 220) { // increase threshold for more connections
-            ctx.globalAlpha = 0.45 - dist / 500;
+          if (dist < 220) {
+            ctx.globalAlpha = 0.22 * (1 - dist / 220); // fade with distance
             ctx.beginPath();
             ctx.moveTo(nodes[i].x, nodes[i].y);
             ctx.lineTo(nodes[j].x, nodes[j].y);
@@ -73,15 +79,20 @@ export default function NeuralNetworkBackground({
           }
         }
       }
-      ctx.globalAlpha = 1;
+      ctx.restore();
 
       // Draw nodes (circles)
+      ctx.save();
+      ctx.globalAlpha = 0.32; // low opacity for nodes
       ctx.fillStyle = "#fff";
+      ctx.shadowColor = "#fff";
+      ctx.shadowBlur = 8;
       for (const node of nodes) {
         ctx.beginPath();
         ctx.arc(node.x, node.y, 4.2, 0, 2 * Math.PI);
         ctx.fill();
       }
+      ctx.restore();
     }
 
 
@@ -111,8 +122,8 @@ export default function NeuralNetworkBackground({
         nodes.push({
           x: Math.random() * width,
           y: Math.random() * height,
-          vx: (Math.random() - 0.5) * 0.25,
-          vy: (Math.random() - 0.5) * 0.25,
+          vx: (Math.random() - 0.5) * 0.08,
+          vy: (Math.random() - 0.5) * 0.08,
         });
       }
       ctx.setTransform(1, 0, 0, 1, 0, 0);
