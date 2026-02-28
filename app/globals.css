@@ -25,5 +25,7 @@
   body {
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
+    /* Custom dotted circle cursor */
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><circle cx="16" cy="16" r="10" fill="none" stroke="white" stroke-width="2" stroke-dasharray="3,3"/></svg>') 16 16, auto;
   }
 }
