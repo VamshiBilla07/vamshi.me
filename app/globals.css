@@ -26,6 +26,6 @@
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
     /* Custom dotted circle cursor */
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><circle cx="6" cy="6" r="4" fill="none" stroke="white" stroke-width="1.5" stroke-dasharray="1,2"/></svg>') 6 6, auto;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><circle cx="6" cy="6" r="4" fill="white"/></svg>') 6 6, auto;
   }
 }
