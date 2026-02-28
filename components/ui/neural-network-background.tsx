@@ -62,9 +62,9 @@ export default function NeuralNetworkBackground({
 
       // Draw connections (lines)
       ctx.save();
-      ctx.globalAlpha = 0.22; // lower opacity for lines
-      ctx.strokeStyle = "#fff"; // white lines for neutral look
-      ctx.lineWidth = 1.7;
+        ctx.globalAlpha = 0.08; // very low opacity for lines
+        ctx.strokeStyle = "#fff";
+        ctx.lineWidth = 1.2;
       for (let i = 0; i < nodes.length; i++) {
         for (let j = i + 1; j < nodes.length; j++) {
           const dx = nodes[i].x - nodes[j].x;
@@ -83,7 +83,7 @@ export default function NeuralNetworkBackground({
 
       // Draw nodes (circles)
       ctx.save();
-      ctx.globalAlpha = 0.38; // increase opacity for visibility
+        ctx.globalAlpha = 0.13; // very low opacity for points
       ctx.fillStyle = "#fff";
       ctx.shadowColor = "transparent";
       ctx.shadowBlur = 0;
