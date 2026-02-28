@@ -89,7 +89,7 @@ export default function NeuralNetworkBackground({
       ctx.shadowBlur = 0;
       for (const node of nodes) {
         ctx.beginPath();
-        ctx.arc(node.x, node.y, 5, 0, 2 * Math.PI); // bigger circle
+        ctx.arc(node.x, node.y, 2, 0, 2 * Math.PI); // revert to small point
         ctx.fill();
       }
       ctx.restore();
