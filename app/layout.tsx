@@ -23,7 +23,6 @@ export const metadata: Metadata = {
 };
 
 
-import CursorClickEffect from "@/components/CursorClickEffect";
 
 export default function RootLayout({
   children,
@@ -33,7 +32,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${oswald.variable} ${caveat.variable}`}>
       <body className="font-sans antialiased">
-        <CursorClickEffect />
         {children}
       </body>
     </html>
