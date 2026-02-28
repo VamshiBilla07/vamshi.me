@@ -26,6 +26,18 @@
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
     /* Custom dotted circle cursor */
-    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><circle cx="6" cy="6" r="4" fill="white"/></svg>') 6 6, auto;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"><circle cx="7" cy="7" r="5" fill="white"/></svg>') 7 7, auto;
+  }
+  /* Ensure custom cursor on navigation and section elements */
+  nav, nav *,
+  section, section *,
+  .cursor-pointer {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"><circle cx="7" cy="7" r="5" fill="white"/></svg>') 7 7, auto !important;
+  }
+  /* Highlight effect on section hover */
+  section:hover {
+    box-shadow: 0 0 0 3px rgba(0, 153, 255, 0.18), 0 2px 16px 0 rgba(0,0,0,0.08);
+    transition: box-shadow 0.2s;
+  }
   }
 }
