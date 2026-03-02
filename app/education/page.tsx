@@ -1,11 +1,21 @@
 "use client";
 
-import React from "react";
+
+import React, { ReactNode } from "react";
 import NeuralNetworkBackground from "@/components/ui/neural-network-background";
 import Navigation from "@/components/navigation";
 import { motion } from "framer-motion";
 
-const EventCard = ({ title, tags, status, children, isGlitch = false, variant = "cyber" }) => (
+type EventCardProps = {
+  title: string;
+  tags: string[];
+  status: string;
+  children?: ReactNode;
+  isGlitch?: boolean;
+  variant?: "cyber" | string;
+};
+
+const EventCard = ({ title, tags, status, children, isGlitch = false, variant = "cyber" }: EventCardProps) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
