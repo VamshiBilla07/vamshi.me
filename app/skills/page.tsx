@@ -44,7 +44,7 @@ export default function SkillsPage() {
         </div>
         {/* Column 3 */}
         <div className="flex flex-col gap-6">
-          {/* <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" className="h-14" /> */}
+          <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" className="h-14" />
           {/* <img src="https://skillicons.dev/icons?i=expressjs" alt="Express.js" className="h-14" />
           <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap" className="h-14" />
           <img src="https://skillicons.dev/icons?i=vite" alt="Vite" className="h-14" /> */}
